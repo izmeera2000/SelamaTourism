@@ -63,6 +63,10 @@
           <span class="nav-link-text ms-1">Dashboard</span>
         </a>
       </li>
+
+      
+
+      
       <?php if ($role != 'guide') { ?>
 
         <li class="nav-item">
@@ -92,14 +96,7 @@
                 </a>
               </li>
 
-              <?php if ($role == 'admin') { ?>
-                <li class="nav-item ">
-                  <a class="nav-link " href="<?php echo $rootPath; ?>/book/settings">
-                    <span class="sidenav-mini-icon"> S </span>
-                    <span class="sidenav-normal"> Settings </span>
-                  </a>
-                </li>
-              <?php } ?>
+             
 
             </ul>
           </div>

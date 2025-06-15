@@ -16,8 +16,7 @@ if (isset($_POST['confirmbooking'])) {
 
 
     $sql = "INSERT INTO bookings (`user_id`, `booking_date`, `timeslot_id`, `people_booked`) VALUES ( '$user_id', '$date', '$session', '$people_count')";
-
-
+ 
     if (mysqli_query($conn, $sql)) {
         $booking_id = mysqli_insert_id($conn); // Get the inserted person ID
     } else {
@@ -31,7 +30,7 @@ if (isset($_POST['confirmbooking'])) {
     for ($i = 1; $i <= $people_count; $i++) {
         // Collect the form data for each person and store it in the session
 
-        
+
 
         $name = $_SESSION['booking']['people'][$i]['name'];
         $ic = $_SESSION['booking']['people'][$i]['ic'];

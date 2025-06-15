@@ -35,7 +35,6 @@ $routes = [
 
     //public
     '' => 'home',
-    'dashboard' => 'dashboard',
 
     'attractions' => 'attractions',
     'facilities' => 'facilities',
@@ -47,6 +46,7 @@ $routes = [
 
 
     //system
+    'dashboard' => 'dashboard',
 
     'book' => 'book_1',
     'book/date' => 'book_1',

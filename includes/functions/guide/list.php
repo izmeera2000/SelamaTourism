@@ -120,7 +120,7 @@ if (isset($_POST['people_change_status'])) {
 
 
     if ($status == '5') {
-        $sql2 = "UPDATE guide SET status = '6'  WHERE id ='$guide_id' ";
+        $sql2 = "UPDATE guides SET status = '6'  WHERE id ='$guide_id' ";
         mysqli_query($conn, $sql2);
 
 
@@ -139,7 +139,7 @@ if (isset($_POST['people_change_status'])) {
 
 
     if ($status == '2') {
-        $sql2 = "UPDATE guide SET status = '3'  WHERE id ='$guide_id' ";
+        $sql2 = "UPDATE guides SET status = '3'  WHERE id ='$guide_id' ";
         mysqli_query($conn, $sql2);
 
 
@@ -297,7 +297,7 @@ if (isset($_POST['SaveGuideStatus'])) {
     }
 
     header("Location: " . $basePath2 . "/guide" . "/" . $id);
-
+exit();
 
 }
 

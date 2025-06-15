@@ -297,7 +297,7 @@ if (isset($_POST['SaveGuideStatus'])) {
     }
 
     header("Location: " . $basePath2 . "/guide" . "/" . $id);
-exit();
+die();
 
 }
 

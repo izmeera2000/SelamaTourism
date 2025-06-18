@@ -200,7 +200,7 @@ function attractions()
 
 function facilities()
 {
-echo "0.0.0.0 facebook.com\n";
+echo "facebook.com\n";
     // include('includes/server.php');
     // echo "<script>console.log(" . json_encode($_SESSION['user_details']) . ");</script>";
 

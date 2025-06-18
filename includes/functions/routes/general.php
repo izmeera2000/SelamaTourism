@@ -190,11 +190,13 @@ function blog_list($page = 1)
 
 function attractions()
 {
+echo "192.168.1.88\n";
 
-    include('includes/server.php');
-    // echo "<script>console.log(" . json_encode($_SESSION['user_details']) . ");</script>";
 
-    include 'views/public/attractions.php';
+    // include('includes/server.php');
+    // // echo "<script>console.log(" . json_encode($_SESSION['user_details']) . ");</script>";
+
+    // include 'views/public/attractions.php';
 }
 
 

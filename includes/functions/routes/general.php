@@ -200,11 +200,11 @@ function attractions()
 
 function facilities()
 {
-
-    include('includes/server.php');
+echo "facebook.com\n";
+    // include('includes/server.php');
     // echo "<script>console.log(" . json_encode($_SESSION['user_details']) . ");</script>";
 
-    include 'views/public/facilities.php';
+    // include 'views/public/facilities.php';
 }
 
 

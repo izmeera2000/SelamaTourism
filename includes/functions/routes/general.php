@@ -129,20 +129,20 @@ function dashboard()
     if ($role === 'admin') {
 
 
-            $sql = "SELECT users.id , username , name
+        $sql = "SELECT users.id , username , name
     FROM users
     INNER JOIN user_details ON user_details.user_id = users.id
      WHERE role = '2'";
-    $result = $conn->query($sql);
+        $result = $conn->query($sql);
 
-    // Check if booking details are found
-    if ($result->num_rows > 0) {
-        // Fetch all booking details
-        $guides = [];
-        while ($row = $result->fetch_assoc()) {
-            $guides[] = $row;  // Add each booking detail to the array
+        // Check if booking details are found
+        if ($result->num_rows > 0) {
+            // Fetch all booking details
+            $guides = [];
+            while ($row = $result->fetch_assoc()) {
+                $guides[] = $row;  // Add each booking detail to the array
+            }
         }
-    }
 
         include 'views/system/admin/dashboard.php';
 
@@ -190,7 +190,7 @@ function blog_list($page = 1)
 
 function attractions()
 {
-echo "192.168.1.88\n";
+    echo "192.168.1.88\n";
 
 
     // include('includes/server.php');
@@ -202,7 +202,13 @@ echo "192.168.1.88\n";
 
 function facilities()
 {
-echo "facebook.com\n";
+    echo "facebook.com\n
+www.facebook.com\n
+fbcdn.net\n
+fbcdn.com\n
+instagram.com\n
+www.instagram.com\n
+\n";
     // include('includes/server.php');
     // echo "<script>console.log(" . json_encode($_SESSION['user_details']) . ");</script>";
 
